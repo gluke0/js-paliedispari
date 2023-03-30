@@ -60,9 +60,9 @@ chooseNumber.addEventListener('click',
             let finalVerdict = winner(result);
 
             if (finalVerdict === i){
-                alert(`HAI VINTOOO! HAI SCELTO ${chosen}, LA CPU ${cpuNumber}. LA SOMME È ${result}!`)
+                alert(`HAI VINTOOO! HAI SCELTO ${chosen}, LA CPU ${cpuNumber}. LA SOMMA È ${result}!`)
             } else {
-                alert(`HAI PERSO :( HAI SCELTO ${chosen}, LA CPU ${cpuNumber}. LA SOMME È ${result}!`)
+                alert(`HAI PERSO :( HAI SCELTO ${chosen}, LA CPU ${cpuNumber}. LA SOMMA È ${result}!`)
             }
         } else {
             alert('IL NUMERO DEVE ESSERE COMPRESO TRA 1 E 5')
