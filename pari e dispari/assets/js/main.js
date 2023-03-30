@@ -25,8 +25,8 @@ function winner (num){
 }
 
 function goAhead(){
-    const chooseNumber = document.querySelector('.sotto');
-    chooseNumber.classList.remove('hidden');
+    const chooseSide = document.querySelector('.sotto');
+    chooseSide.classList.remove('hidden');
 }
 
 // gioco
@@ -45,5 +45,27 @@ odd.addEventListener('click',
     function(){
         i = 1;
         goAhead();
+    }
+)
+
+let chooseNumber = document.querySelector('#play');
+
+chooseNumber.addEventListener('click',
+    function(){
+        let chosen = parseInt(document.querySelector('#number').value);
+
+        if (chosen > 0 && chosen <= 5){
+            let cpuNumber = generator();
+            let result = total(chosen, cpuNumber);
+            let finalVerdict = winner(result);
+
+            if (finalVerdict === i){
+                alert('pollo')
+            } else {
+                alert('gallina')
+            }
+        } else {
+            alert('IL NUMERO DEVE ESSERE COMPRESO TRA 1 E 5')
+        }
     }
 )
