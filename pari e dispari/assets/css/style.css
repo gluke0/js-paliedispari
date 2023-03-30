@@ -1,0 +1,75 @@
+body{
+    background-color: antiquewhite;
+    font-family: 'Martian Mono';
+    color: black;
+    width: 100%;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+}
+
+h1, h2{
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+}
+
+.sopra{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sopra button{
+    width: 15%;
+    margin: 1rem;
+}
+
+.sotto{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+form{ 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    border: none;
+    height: 2rem;
+    width: 10rem;
+    font-size: 2rem;
+}
+
+input:hover{
+    background-color: bisque;
+}
+
+button{
+    border: none;
+    background-color: orange;
+    height: 2rem;
+}
+
+button:hover{
+    opacity: 0.5;
+    font-weight: bolder;
+}
+
+
