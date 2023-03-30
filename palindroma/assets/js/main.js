@@ -21,8 +21,8 @@ button.addEventListener ('click',
             for (let i = input.length - 1; i >= 0; i--){
                 word2.push(input[i]);
             } 
-
-            if (word2 == word1){
+            
+            if (word1.join("")==word2.join("")){
                 alert('LA PAROLA È PALINDROMA')
             } else {
                 alert('LA PAROLA NON È PALINDROMA')
