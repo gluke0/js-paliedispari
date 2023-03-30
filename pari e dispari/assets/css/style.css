@@ -72,4 +72,6 @@ button:hover{
     font-weight: bolder;
 }
 
-
+.hidden{
+    display: none;
+}

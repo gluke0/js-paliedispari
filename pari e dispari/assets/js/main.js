@@ -15,3 +15,35 @@ function total (num1, num2){
     const sum = num1 + num2;
     return sum;
 }
+
+function winner (num){
+    if (num % 2 == 0){
+        return 0;
+    } else {
+        return 1;
+    }
+}
+
+function goAhead(){
+    const chooseNumber = document.querySelector('.sotto');
+    chooseNumber.classList.remove('hidden');
+}
+
+// gioco
+let even = document.querySelector('#even');
+let odd = document.querySelector('#odd');
+
+let i = 0;
+
+even.addEventListener('click',
+    function(){
+        goAhead();
+    }
+)
+
+odd.addEventListener('click',
+    function(){
+        i = 1;
+        goAhead();
+    }
+)
